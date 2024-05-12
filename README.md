@@ -36,6 +36,10 @@ cdk deploy
 ```
 You should define AWS credentials with relevant permissions for this command to work.
 
+After the deployment is completed, you can find the application URL in the output of the CDK command.
+![image](https://github.com/MichaelShapira/html2image-with-genai/assets/135519473/fc3c0e66-87da-479f-a342-988a9b666102)
+
+
 # Sample Usage
 
 ![image](https://github.com/MichaelShapira/html2image-with-genai/assets/135519473/d160315d-1c97-4e5a-9bec-d2b98e62dbfc)
