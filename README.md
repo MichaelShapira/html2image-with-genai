@@ -36,5 +36,8 @@ cdk deploy
 ```
 You should define AWS credentials with relevant permissions for this command to work.
 
+# Sample Usage
+
+![image](https://github.com/MichaelShapira/html2image-with-genai/assets/135519473/d160315d-1c97-4e5a-9bec-d2b98e62dbfc)
 
 
