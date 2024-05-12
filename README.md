@@ -30,7 +30,7 @@ You can control which model to use in the Lambda environment settings. The defau
 # Deployment 
 
 You need to install AWS CDK following this instructions https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html.
-Checout the repository and run from the root folder
+Checkout the repository from Github and run from the root folder...
 ```
 cdk deploy
 ```
