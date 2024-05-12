@@ -139,7 +139,7 @@ If you don't identify this information in the picture, return the text "Referenc
                     link.click();
                 });
         }
-        
+
         function sendFormData() {
             html2canvas(document.querySelector("#notesForm")).then(canvas => {
                 let imgData = canvas.toDataURL('image/png');
@@ -190,13 +190,13 @@ If you don't identify this information in the picture, return the text "Referenc
     elif http_method == 'POST':
         # Process the form submission
         base64_data = ""
-        print(event['body'])
-        print(type(event['body']))
+       
+        
         request_data = json.loads(event['body'])
         image_data = request_data['imgData']
-        print(image_data)
+       
         input_text = request_data['instructions']
-        print(input_text)
+       
         if image_data:
             # Decode the base64 image data
             try:
@@ -206,7 +206,7 @@ If you don't identify this information in the picture, return the text "Referenc
                 
                 # Substring the string starting from the index after the comma
                 base64_data = image_data[comma_index + 1:]
-                print(image_binary)
+               
                 # Do something with the image binary data (e.g., save it to a file or upload it to S3)
                 response_message = f"Received image data with length {len(image_binary)} bytes"
             except Exception as e:
@@ -215,18 +215,13 @@ If you don't identify this information in the picture, return the text "Referenc
             response_message = "No image data received"
         
         try:
-            print(1)
+            
             bedrock_runtime = boto3.client(service_name='bedrock-runtime')
             model_id = os.environ.get('MODEL_ID')
             #model_id = 'anthropic.claude-3-sonnet-20240229-v1:0'
             #model_id='anthropic.claude-3-haiku-20240307-v1:0'
             max_tokens = 1000
             
-           
-    
-            print(2)
-            
-    
             message = {"role": "user",
                  "content": [
                     {"type": "image", "source": {"type": "base64",
@@ -239,15 +234,11 @@ If you don't identify this information in the picture, return the text "Referenc
     
             gen_response_message = run_multi_modal_prompt(
                 bedrock_runtime, model_id, messages, max_tokens)
-            #print(json.dumps(response, indent=4))
-            print(3)
-            print(gen_response_message)
+
             response_message = json.dumps(gen_response_message['content'][0]['text'], indent=4)
         except ClientError as err:
-            print(4)
             response_message = err.response["Error"]["Message"]
             print(err)
-            #print("A client error occured: " + format(message))
             
 
         response = {
