@@ -19,7 +19,7 @@ The repository contains a ready-to-deploy demo of an HTML page with a simple for
 ![image](https://github.com/MichaelShapira/html2image-with-genai/assets/135519473/9193cbe1-a751-4411-a426-145f621c1965)
 
 We have one lambda function to handle all the logic. End users access the Lambda with a GET request that returns the HTML page (the same as you see above).
-The user can modify the instractions or use the default one (that validates the referenced number). Once the user clicks the submit button, the form is converted to an image and sent as a POST request to the same Lambda. Lambda passes the image and distractions to the model in Amazon Bedrock and returns the relevant result.
+The user can modify the instractions or use the default one (that validates the referenced number). Once the user clicks the submit button, the form is converted to an image and sent as a POST request to the same Lambda. Lambda passes the image and instractions to the model in Amazon Bedrock and returns the relevant result.
 
 # Customization
 
