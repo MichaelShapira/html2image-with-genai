@@ -11,7 +11,7 @@ The repository contains a ready-to-deploy demo of an HTML page with a simple for
 
    They need the ability to define custom rules for specific fields, which is not doable with those tools. However, you can customize the behavior of the buttons (like Submit button in this example).
 
-2. Organizations have foolproof control over the web application, but the number of fields that you need to customize is not negligible and is hard to manage. In addition, the cycle of defining the validation rule, approving it, and implementing it is very time-consuming and, in most cases, requires some technical background.
+2. Organizations have full control over the web application, but the number of fields that you need to customize is not negligible and is hard to manage. In addition, the cycle of defining the validation rule, approving it, and implementing it is very time-consuming and, in most cases, requires some technical background.
 
 3. Some fields just cannot be validated by using standard tools like regular expressions. For example, on the print screen above, the organization wants to force the person who fills out the remarks to summarize the interaction with the customer. There is no way to validate it without generative AI.
 
