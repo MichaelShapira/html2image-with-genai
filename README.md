@@ -1,9 +1,14 @@
 
-# AWS CDK project to validate HTML form input by converting it to an image and analyzing the image with Generative AI
+# Automated HTML form validation without javascript
 
 The repository contains a ready-to-deploy demo of an HTML page with a simple form. The input of the form is being validated by Amazon Bedrock Generative AI model after it is converted to **image**
 
 ![image](https://github.com/MichaelShapira/html2image-with-genai/assets/135519473/b682736e-6fe8-497a-a438-ff3e6c30137f)
+
+# Sample Usage
+
+![image](https://github.com/MichaelShapira/html2image-with-genai/assets/135519473/d160315d-1c97-4e5a-9bec-d2b98e62dbfc)
+
 
 # Why is it relevant?
 
@@ -39,9 +44,5 @@ You should define AWS credentials with relevant permissions for this command to 
 After the deployment is completed, you can find the application URL in the output of the CDK command.
 ![image](https://github.com/MichaelShapira/html2image-with-genai/assets/135519473/fc3c0e66-87da-479f-a342-988a9b666102)
 
-
-# Sample Usage
-
-![image](https://github.com/MichaelShapira/html2image-with-genai/assets/135519473/d160315d-1c97-4e5a-9bec-d2b98e62dbfc)
 
 
