@@ -20,6 +20,8 @@ The repository contains a ready-to-deploy demo of an HTML page with a simple for
 
 3. Some fields just cannot be validated by using standard tools like regular expressions. For example, on the print screen above, the organization wants to force the person who fills out the remarks to summarize the interaction with the customer. There is no way to validate it without generative AI.
 
+4. Modern QA approaches use automated frameworks like Selenium to verify the output on the page after some user interaction. Instead of writing the logic for page verification, the content can be converted to an image and outsourced to a generative AI model for approval without writing a single line of code. 
+
 # Architecture
 ![image](https://github.com/MichaelShapira/html2image-with-genai/assets/135519473/9193cbe1-a751-4411-a426-145f621c1965)
 
